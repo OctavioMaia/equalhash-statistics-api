@@ -15,24 +15,24 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//etc.daggerpool.com/',
+            ApiUrl: '//equalhash.dynu.net/',
 
             // HTTP mining endpoint
-            HttpHost: 'http://etc-us01.daggerpool.com',
+            HttpHost: 'equalhash.dynu.net',
             HttpPort: 40002,
 
             // Stratum mining endpoint
-            StratumHost: 'etc-us01.daggerpool.com',
+            StratumHost: 'equalhash.dynu.net',
             StratumPort: 9009,
 
-            StratumHost1: 'etc-uk01.daggerpool.com',
+            StratumHost1: '',
             StratumPort1: 9009,
 
-            NicehashHost: 'etc-nh.daggerpool.com',
+            NicehashHost: '',
             NicehashPost: 40004,
 
             // Fee and payout details
-            PoolFee: '0.9%',
+            PoolFee: '0.5%',
             PayoutThreshold: '0.5',
             ShareDifficulty: '4000000000',
 
@@ -41,25 +41,23 @@ module.exports = function (environment) {
             CoinName: 'Ethereum Classic',
             CoinShortName: 'ETC',
             PaymentText: 'every 2 hours',
-            SupportMail: 'helpdesk@daggerpool.com',
-            SupportHelpdesk: 'http://helpdesk.daggerpool.com',
-            WebsiteName: 'etc.daggerpool.com',
+            SupportMail: '',
+            SupportHelpdesk: '',
+            WebsiteName: 'equalhash.dynu.net',
 
             //Coin Bases Settings
-            ChainAddress : 'https://gastracker.io/addr/',
-	    TransactionAddress : 'https://gastracker.io/tx/',
-            UncleAddress : 'https://gastracker.io/uncle/',
-            BlockAddress : 'https://gastracker.io/block/',
+            ChainAddress : 'https://blockscout.com/etc/mainnet/address/',
+	        TransactionAddress : 'https://blockscout.com/etc/mainnet/tx/',
+            UncleAddress : 'https://blockscout.com/etc/mainnet/blocks/',
+            BlockAddress : 'https://blockscout.com/etc/mainnet/blocks/',
 
             //Twitter Parameter
-            TwitterURL: 'https://twitter.com/',
-            TwitterHash: 'daggerpool_com',
+            TwitterURL: '',
+            TwitterHash: '',
 
 
             // For network hashrate (change for your favourite fork)
-            BlockTime: 15
-
-
+            BlockTime: 14
         }
     };
 
