@@ -26,7 +26,7 @@ Router.map(function() {
   this.route('miners');
   this.route('exchange');
   this.route('about');
-   this.route('helpdesk', { path: 'http://helpdesk.miningpoolindia.com' });
+  this.route('helpdesk', { path: 'http://helpdesk.miningpoolindia.com' });
 });
 
 export default Router;
