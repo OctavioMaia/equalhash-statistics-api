@@ -40,7 +40,7 @@ module.exports = function (environment) {
             Currency: 'USD',
             CoinName: 'Ethereum Classic',
             CoinShortName: 'ETC',
-            PaymentText: 'every 2 hours',
+            PaymentText: 'every hour',
             SupportMail: '',
             SupportHelpdesk: '',
             WebsiteName: 'equalhash.dynu.net',
