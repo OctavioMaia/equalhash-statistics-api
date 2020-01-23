@@ -47,9 +47,9 @@ module.exports = function (environment) {
 
             //Coin Bases Settings
             ChainAddress : 'https://minergate.com/blockchain/etc/block/',
-	        TransactionAddress : 'https://blockscout.com/etc/mainnet/tx/',
-            UncleAddress : 'https://blockscout.com/etc/mainnet/blocks/',
-            BlockAddress : 'https://blockscout.com/etc/mainnet/blocks/',
+	        TransactionAddress : 'https://minergate.com/blockchain/etc/transaction/',
+            UncleAddress : 'https://minergate.com/blockchain/etc/block/',
+            BlockAddress : 'https://minergate.com/blockchain/etc/block/',
 
             //Twitter Parameter
             TwitterURL: '',
