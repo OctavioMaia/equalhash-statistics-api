@@ -1,10 +1,10 @@
 <div id="page-wrapper">
     <div class="row" style="padding-top:50px;">
         <div class="col-lg-4">
-            <span  class="text-blue"style="font-family: 'Fredericka the Great'; font-size: 35px;margin-top:50px;" >POOL STATISTICS</span>
+            <span  style="font-size: 35px;margin-top:50px;" >POOL STATISTICS</span>
         </div>
         <div class="col-lg-8" style="margin-bottom: 20px;" >
-            <span  style="font-family: Lobster; margin-top:50px; border-bottom: none;">Welcome to high performance {{config.CoinName}} mining pool. This pool provides higher profit in comparison to other popular pools for Miners who are not hopping the pool by employing Dynamic realtime PPLNS payments mode. Payouts are processed {{config.PaymentText}}.
+            <span  style="margin-top:50px; border-bottom: none;">Welcome to the EqualHash mining pool. This pool provides higher profit in comparison to other popular pools for Miners who are not hopping the pool by employing Dynamic realtime PPLNS payments mode. Payouts are processed {{config.PaymentText}}.
             </span>
         </div>
         <!-- /.col-lg-12 -->
@@ -126,7 +126,7 @@
                 <div class="list-group">
                     <a  class="list-group-item">
                         <i class="fa fa-trophy fa-fw"></i> Rewards System
-                        <span class="pull-right text-muted small"><span class="label label-success"><em>Dynamic PPL'N'S</em></span>
+                        <span class="pull-right text-muted small"><span class="label label-success"><em>Dynamic PPLNS</em></span>
                             <a href="http://give-me-coins.com/support/faq/what-is-pplns/" target="_blank"><i class="fa fa-question fa-fw"></i></a>
                         </span>
                     </a>
@@ -207,7 +207,8 @@
 
                 <!-- /.panel-body -->
             </div>
-
+            
+            <!--
             <div class="chat-panel panel panel-success">
                 <div class="panel-heading">
                     <i class="fa fa-twitter fa-fw"></i> UPDATES
@@ -215,15 +216,11 @@
 
                     </div>
                 </div>
-                <!-- /.panel-heading -->
                 <div class="panel-body">
                     {{#twitter-feed}}
                     <a class="twitter-timeline" href="{{config.TwitterURL}}{{config.TwitterHash}}">Tweets by {{config.TwitterHash}}</a>
                     {{/twitter-feed}}
                 </div>
-                <!-- /.panel-body -->
-
-                <!-- /.panel-footer -->
             </div>
             <!-- /.panel .chat-panel -->
         </div>
@@ -258,15 +255,15 @@
                     <ul class="nav nav-tabs" id="myTab">
                         
                         <li class="active"><a data-target="#general" data-toggle="tab"><i class="fa fa-info fa-fw"></i> INFORMATION</a></li>
-                        <li ><a data-target="#rent" data-toggle="tab"><i class="fa fa-credit-card-alt fa-fw"></i> RENTING</a></li>
+                        <!--  <li ><a data-target="#rent" data-toggle="tab"><i class="fa fa-credit-card-alt fa-fw"></i> RENTING</a></li> -->
                         <li><a data-target="#claymore" data-toggle="tab"><i class="fa fa-download fa-fw"></i>CLAYMORE</a></li>
-                        <li><a data-target="#stratumproxy" data-toggle="tab"><i class="fa fa-download fa-fw"></i>STRATUM PROXY</a></li>
-                        <li><a data-target="#genoils" data-toggle="tab"><i class="fa fa-download fa-fw"></i>CPP VERSION</a></li>
+                        <!-- <li><a data-target="#stratumproxy" data-toggle="tab"><i class="fa fa-download fa-fw"></i>STRATUM PROXY</a></li> -->
+                        <!-- <li><a data-target="#genoils" data-toggle="tab"><i class="fa fa-download fa-fw"></i>CPP VERSION</a></li> -->
                     </ul>
 
                     <div class="tab-content">
 
-                         <div class="tab-pane " id="rent">
+                         <!--  <div class="tab-pane " id="rent">
                             <div class="col-lg-12">
                                 <div class="panel">
                                     <div class="panel-body">
@@ -308,7 +305,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="tab-pane active" id="general" style="height:600px; overflow-y: scroll;">
                           <div class="col-lg-12">
                             <div class="panel">
@@ -336,9 +333,9 @@
                                       <li class="list-group-item">
                                         <i class="fa fa-download fa-fw"></i> Payout are processed {{config.PaymentText}}
                                       </li>
-                                      <li class="list-group-item">
+                                      <!--  <li class="list-group-item">
                                         <i class="fa fa-sun-o fa-fw"></i>Customizable minimum payment threshold, To customize, please send us email of your {{config.CoinShortName}}Address, IP Address, Email and Payout threshold to {{config.SupportMail}}
-                                      </li>                                     
+                                      </li>                                      -->
                                       <li class="list-group-item">
                                         <i class="fa fa-sitemap fa-fw"></i> Full stratum support (supports all type of miners)
                                       </li>
@@ -348,9 +345,9 @@
                                       <li class="list-group-item">
                                         <i class="fa fa-bar-chart fa-fw"></i> Detailed global and per-worker statistics
                                       </li>
-                                      <li class="list-group-item">
+                                      <!--  <li class="list-group-item">
                                         <i class="fa fa-envelope fa-fw"></i> Professional Helpdesk  <a target="_blank" href="{{config.SupportHelpdesk}}">  Helpdesk  </a>
-                                      </li>
+                                      </li> -->
 
                                     </ul>
                                   </div>
@@ -360,7 +357,7 @@
                             </div>
                           </div>
 
-                          <div class="col-lg-12">
+                          <!--  <div class="col-lg-12">
                             <div class="panel">
                               <div class="panel-body" style="padding-top:0px;padding-bottom:0px">
  <h3 class="text-orange"><i class="fa fa-calendar fa-fw"></i>FUTURE SCOPE</h3>
@@ -388,7 +385,8 @@
                           </div>
 
 
-                        </div>
+                        </div> -->
+                        
                         <div class="tab-pane" id="claymore">
                             <div class="col-lg-12">
                                 <div class="panel">
@@ -398,23 +396,15 @@
                                         <div class="panel-body">
 
                                           <div class="bs-callout bs-callout-info" id="callout-labels-inline-block">
-                                          <h4><i class="fa fa-cloud-download fa-fw"></i>Download  <span class="badge">Latest version is v10.0</span></h4>
+                                          <h4><i class="fa fa-cloud-download fa-fw"></i>Download  <span class="badge">Latest version is v15.0</span></h4>
                                           <ul class="list-group">
                                             <li class="list-group-item">
-                                              <a href="https://github.com/techievee/Claymore-Dual-Miner/releases/download/10.0/Claymore.s.Dual.GPU.Miner.v10.0-Windows.zip" target="_blank" rel="nofollow">
-                                                <i class="fa fa-windows fa-fw"></i>
-                                                <strong>Claymore's. Dual Miner.v10.0.zip</strong><em> Use Internet Explorer for download </em>
-                                                <small class="text-gray pull-right">13.1 MB</small>
+                                              <a href="https://bitcointalk.org/index.php?topic=1433925.0" target="_blank" rel="nofollow">
+                                                <i class="fa fa-download fa-fw"></i>
+                                                <strong>Claymore's v15.0</strong>
+                                                <small class="text-gray pull-right">12.7 MB</small>
                                               </a>
                                             </li>
-                                            <li class="list-group-item">
-                                              <a href="https://github.com/techievee/Claymore-Dual-Miner/releases/download/10.0/Claymore.s.Dual.GPU.Miner.v10.0.-.LINUX.tar.gz" rel="nofollow">
-                                                <i class="fa fa-linux fa-fw"></i>
-                                                <strong>Claymore's Dual Miner.v10.0-.LINUX.tar.gz</strong>
-                                                <small class="text-gray pull-right">1.66 MB</small>
-                                              </a>
-                                            </li>
-
                                           </ul>
                                         </div>
 
@@ -437,7 +427,7 @@
                                           </div>
 
 
-                                          <div class="bs-callout bs-callout-info" id="callout-labels-inline-block">
+                                          <!--  <div class="bs-callout bs-callout-info" id="callout-labels-inline-block">
                                             Put the following commands into a file <kbd>epools.txt</kbd> to automatically switch to backup server, The server may be added later depending upon the load
                                             <h4><i class="fa fa-database fa-fw"></i>Backup Servers</h4>
                                             <ul class="list-group">
@@ -449,7 +439,7 @@
                                               </li>
 
                                             </ul>
-                                          </div>
+                                          </div> -->
 
 
                                         </div>
@@ -458,7 +448,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="stratumproxy">
+                        <!--  <div class="tab-pane" id="stratumproxy">
                           <div class="col-lg-12">
                             <div class="panel">
                               <div class="panel-body">
@@ -531,8 +521,9 @@
                             </div>
                           </div>
 
-                        </div>
-                        <div class="tab-pane" id="genoils">
+                        </div> -->
+
+                        <!--  <div class="tab-pane" id="genoils">
                           <div class="col-lg-12">
                             <div class="panel">
                               <div class="panel-body">
@@ -610,7 +601,7 @@
                           </div>
 
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
