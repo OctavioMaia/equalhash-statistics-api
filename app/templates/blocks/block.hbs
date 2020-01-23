@@ -1,9 +1,9 @@
 <tr>
   <td>
     {{#if block.uncle}}
-      <a href="{{config.UncleAddress}}{{block.uncleHeight}}" rel="nofollow" target="_blank">{{format-number block.height}}</a>
+      <a href="{{config.UncleAddress}}{{block.uncleHeight}}" rel="nofollow" target="_blank">{{block.height}}</a>
     {{else}}
-      <a href="{{config.BlockAddress}}{{block.height}}" rel="nofollow" target="_blank">{{format-number block.height}}</a>
+      <a href="{{config.BlockAddress}}{{block.height}}" rel="nofollow" target="_blank">{{block.height}}</a>
     {{/if}}
   </td>
   <td>
