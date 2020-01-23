@@ -46,7 +46,7 @@ module.exports = function (environment) {
             WebsiteName: 'equalhash.dynu.net',
 
             //Coin Bases Settings
-            ChainAddress : 'https://minergate.com/blockchain/etc/block/',
+            ChainAddress : 'https://etcblockexplorer.com/addr/',
 	        TransactionAddress : 'https://minergate.com/blockchain/etc/transaction/',
             UncleAddress : 'https://minergate.com/blockchain/etc/block/',
             BlockAddress : 'https://minergate.com/blockchain/etc/block/',
