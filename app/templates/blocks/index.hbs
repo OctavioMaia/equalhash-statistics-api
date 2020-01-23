@@ -1,50 +1,5 @@
 <div style="height:600px; overflow-y: scroll;">
-<div class="table-responsive">
-<table class="table table-condensed table-striped">
-  <thead>
-    <tr>
-      <th>Height</th>
-      <th>Time Found</th>
-      <th>Variance</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each model.candidates as |block|}}
-    <tr>
-      <td><a href="{{config.BlockAddress}}{{block.height}}" rel="nofollow" target="_blank">{{block.height}}</a></td>
-      <td>{{format-date-locale block.timestamp}}</td>
-      <td>
-        {{#if block.isLucky}}
-        <span class="label label-success">{{format-number block.variance style='percent'}}</span>
-        {{else}}
-        <span class="label label-info">{{format-number block.variance style='percent'}}</span>
-        {{/if}}
-      </td>
-    </tr>
-    {{/each}}
-  </tbody>
-</table>
-</div>
-
-<div class="table-responsive">
-<table class="table table-condensed table-striped">
-  <thead>
-    <tr>
-      <th>Height</th>
-      <th>Block Hash</th>
-      <th>Time Found</th>
-      <th>Variance</th>
-      <th>Reward</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each model.immature as |block|}}
-      {{partial "blocks/block"}}
-    {{/each}}
-  </tbody>
-</table>
-</div>
-
+<h4>All blocks</h4>
 <div class="table-responsive">
   <table class="table table-condensed table-striped">
     <thead>
@@ -57,6 +12,24 @@
       </tr>
     </thead>
     <tbody>
+      {{#each model.candidates as |block|}}
+      <tr>
+        <td><a href="{{config.BlockAddress}}{{block.height}}" rel="nofollow" target="_blank">{{block.height}}</a></td>
+        <td>-</td>
+        <td>{{format-date-locale block.timestamp}}</td>
+        <td>
+          {{#if block.isLucky}}
+          <span class="label label-success">{{format-number block.variance style='percent'}}</span>
+          {{else}}
+          <span class="label label-info">{{format-number block.variance style='percent'}}</span>
+          {{/if}}
+        </td>
+        <td>-</td>
+      </tr>
+      {{/each}}
+      {{#each model.immature as |block|}}
+        {{partial "blocks/block"}}
+      {{/each}}
       {{#each model.matured as |block|}}
         {{partial "blocks/block"}}
       {{/each}}
