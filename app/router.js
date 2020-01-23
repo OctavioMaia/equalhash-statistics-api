@@ -24,9 +24,9 @@ Router.map(function() {
   this.route('help');
   this.route('payments');
   this.route('miners');
-  this.route('exchange');
+  this.route('exchange', {path: 'https://coinmarketcap.com/currencies/ethereum-classic/'});
   this.route('about');
-   this.route('helpdesk', { path: 'http://helpdesk.miningpoolindia.com' });
+  this.route('helpdesk', { path: 'http://helpdesk.miningpoolindia.com' });
 });
 
 export default Router;
