@@ -25,8 +25,9 @@ module.exports = function (environment) {
             StratumHost: 'equalhash.pt',
             StratumPort: 9009,
 
-            StratumHost1: '',
-            StratumPort1: 9009,
+            // Stratum SSL mining endpoint
+            StratumHost1: 'equalhash.pt',
+            StratumPort1: 8008,
 
             NicehashHost: '',
             NicehashPost: 40004,
