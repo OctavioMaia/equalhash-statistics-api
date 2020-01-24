@@ -15,14 +15,14 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//equalhash.dynu.net/',
+            ApiUrl: '//equalhash.pt/',
 
             // HTTP mining endpoint
-            HttpHost: 'equalhash.dynu.net',
+            HttpHost: 'equalhash.pt',
             HttpPort: 40002,
 
             // Stratum mining endpoint
-            StratumHost: 'equalhash.dynu.net',
+            StratumHost: 'equalhash.pt',
             StratumPort: 9009,
 
             StratumHost1: '',
@@ -43,7 +43,7 @@ module.exports = function (environment) {
             PaymentText: 'every 2 hours',
             SupportMail: '',
             SupportHelpdesk: '',
-            WebsiteName: 'equalhash.dynu.net',
+            WebsiteName: 'equalhash.pt',
 
             //Coin Bases Settings
             ChainAddress : 'https://etcblockexplorer.com/addr/',
