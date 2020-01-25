@@ -26,7 +26,8 @@ Router.map(function() {
   this.route('miners');
   this.route('exchange');
   this.route('about');
-  this.route('helpdesk', { path: 'http://helpdesk.miningpoolindia.com' });
+  this.route('telegram', { path: 'https://t.me/EqualHash_Bot' });
+  this.route('helpdesk', { path: '' });
 });
 
 export default Router;
