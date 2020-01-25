@@ -6,11 +6,6 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('account', { path: '/account/:login' }, function() {
-    this.route('payouts');
-    this.route('rewards');
-    this.route('settings');
-  });
   this.route('not-found');
 
   this.route('blocks', function() {
@@ -19,15 +14,9 @@ Router.map(function() {
     this.route('pending');
     
   });
-  
-
-  this.route('help');
   this.route('payments');
   this.route('miners');
-  this.route('exchange');
   this.route('about');
-  this.route('telegram', { path: 'https://t.me/EqualHash_Bot' });
-  this.route('helpdesk', { path: '' });
 });
 
 export default Router;
