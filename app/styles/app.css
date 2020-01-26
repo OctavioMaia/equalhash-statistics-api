@@ -51,8 +51,9 @@ code {
 }
 
 .navbar-default {
-    background-color: #04191f;
-    border-color: #69102b;
+    /*background-color: #04191f;
+    border-color: #69102b;*/
+    background: #222;
 }
 .navbar-default .navbar-brand {
     color: #dadada;
@@ -74,8 +75,9 @@ code {
     background-color: #0a6c9d;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    color: #ffffff;
-    background-color: #69102b;
+    /*color: #ffffff;
+    background-color: #69102b;*/
+    background: #222;
 }
 .navbar-default .navbar-toggle {
     border-color: #0a6c9d;
@@ -1348,7 +1350,7 @@ background-color: #e7e7e7;
 
 
 .navbar-default {
-    background: rgba(0,4,8,1);
+    /*background: rgba(0,4,8,1);
     background: -moz-linear-gradient(left, rgba(0,4,8,1) 0%, rgba(12,68,128,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,4,8,1)), color-stop(100%, rgba(12,68,128,1)));
     background: -webkit-linear-gradient(left, rgba(0,4,8,1) 0%, rgba(12,68,128,1) 100%);
@@ -1356,8 +1358,10 @@ background-color: #e7e7e7;
     background: -ms-linear-gradient(left, rgba(0,4,8,1) 0%, rgba(12,68,128,1) 100%);
     background: linear-gradient(to right, rgba(0,4,8,1) 0%, rgba(12,68,128,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000408', endColorstr='#0c4480', GradientType=1 );
-    border-color: #69102b;
+    border-color: #69102b;*/
+    background: #222;
 }
+
 
 .bg-gradientblue {
     background: rgba(0,4,8,1);
