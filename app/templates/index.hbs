@@ -221,6 +221,9 @@
                     <ul class="nav nav-tabs" id="myTab">
                         <li class="active"><a data-target="#general" data-toggle="tab"><i class="fa fa-info fa-fw"></i>FEATURES</a></li>
                         <li><a data-target="#claymore" data-toggle="tab"><i class="fa fa-download fa-fw"></i>CLAYMORE</a></li>
+                        <li><a data-target="#phoenix" data-toggle="tab"><i class="fa fa-download fa-fw"></i>PHOENIX</a></li>
+                        <li><a data-target="#hiveos" data-toggle="tab"><i class="fa fa-download fa-fw"></i>HIVEOS</a></li>
+                        <li><a data-target="#smos" data-toggle="tab"><i class="fa fa-download fa-fw"></i>SMOS</a></li>
                     </ul>
 
                     <div class="tab-content">
@@ -260,7 +263,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        {{!-- claymore --}}
                         <div class="tab-pane" id="claymore">
                             <div class="panel">
                                 <div class="panel-body">
@@ -274,7 +277,6 @@
                                             </a>
                                         </li>
                                     </ul>
-
                                     <h4><i class="fa fa-cogs fa-fw"></i>Configuration File</h4>Put the following commands into a file <kbd>start.bat</kbd> and double click to start your miner
                                     <ul class="list-group">
                                         <li class="list-group-item">
@@ -288,6 +290,54 @@
                                             </span>
                                         </li>
                                     </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {{!-- phoenix --}}
+                        <div class="tab-pane" id="phoenix">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <h4><i class="fa fa-cloud-download fa-fw"></i>Download  <span class="badge">Latest version is 4.9c</span></h4>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <a href="https://bitcointalk.org/index.php?topic=2647654.0" target="_blank" rel="nofollow">
+                                                <i class="fa fa-download fa-fw"></i>
+                                                <strong>PhoenixMiner 4.9c</strong>
+                                                <small class="text-gray pull-right">4.7 MB</small>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <h4><i class="fa fa-cogs fa-fw"></i>Configuration File</h4>Put the following commands into a file <kbd>start.bat</kbd> and double click to start your miner
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <span style="font-family: 'Anonymous Pro';">
+                                              setx GPU_FORCE_64BIT_PTR 0<br/>
+                                              setx GPU_MAX_HEAP_SIZE 100<br/>
+                                              setx GPU_USE_SYNC_OBJECTS 1<br/>
+                                              setx GPU_MAX_ALLOC_PERCENT 100<br/>
+                                              setx GPU_SINGLE_ALLOC_PERCENT 100<br/>
+                                              <h4>PhoenixMiner.exe -pool {{config.StratumHost}}:{{config.StratumPort}} -wal <kbd>{{config.CoinName}}Address</kbd> -worker <kbd>WORKERNAME</kbd> -coin etc -proto 2</h4>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {{!-- hiveos --}}
+                        <div class="tab-pane" id="hiveos">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <h4><i class="fa fa-cogs fa-fw"></i>HiveOS Flight Sheet</h4>Follow the configuration below to create your own flight sheet
+                                    <img src="assets/hiveos1.png" class="img-responsive" width="100%" style="padding-top:20px;"/>
+                                    <img src="assets/hiveos2.png" class="img-responsive" width="100%" style="padding-top:20px;"/>
+                                </div>
+                            </div>
+                        </div>
+                        {{!-- smos --}}
+                        <div class="tab-pane" id="smos">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <h4><i class="fa fa-cogs fa-fw"></i>SMOS configuration</h4> <strong>TODO</strong>
                                 </div>
                             </div>
                         </div>
