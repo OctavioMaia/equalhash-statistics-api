@@ -1,13 +1,13 @@
-# Front-End Statistics for the Ethash Mining Pool
+# Front-End Statistics for the EqualHash Mining Pool
 
-Front End component for the Ethash mining pool.
+Frontend and statistics component for the EqualHash mining pool.
 
 This is an ember application, which can be hosted on any simple webserver.
-The application static pages can be placed in any Content delivery network for faster access
+The application static pages can be placed in any Content delivery network for faster access.
 
-  ### Features
+### **Features**
 
-**This pool is reegineered from sammy007 open-ethereum-pool for efficiency and for better payment algorithm. This software is functional and tested and implemented in big Mining farms. Testing and bug submissions are still welcome!
+**This pool is reegineered from sammy007 open-ethereum-pool for efficiency and for better payment algorithm. This software is functional and tested and implemented in big Mining farms. Testing and bug submissions are still welcome!**
 
 *	Support for HTTP, SSL, Stratum, Stratum+SSL mining
 *	Detailed block stats with luck percentage and full reward
@@ -17,7 +17,7 @@ The application static pages can be placed in any Content delivery network for f
 *	JSON-API for statistics, (Looking for contributor to build app for the pool)
 *	Dynamic PPLNS block reward (*New)
 
-## Prerequisites
+## **Prerequisites**
 
 You will need the following things properly installed on your computer.
 
@@ -27,58 +27,43 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](http://www.ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
-### Branches 
-**Please clone the project using the branches as  per the coin
+## **Installation**
 
-* v1.0_Eth – Ethereum 
-*	v1.0_Etc – Ethereum Classic
-*	v1.0_Exp – Expanse 
-*	v1.0_Ubiq – Ubiq 
-*	v1.0_Pirl – Pirl 
-*	v1.0_Dbix – Dubai coin 
-*	v1.0_Soil – Soil Coin 
-*	v1.0_Mc – Music Coin 
-
-
-## Installation 
-
-* `git clone -b <branch> https://github.com/techievee/statistics_api.git` this repository
+* `git clone -b <branch> https://github.com/OctavioMaia/equalhash-statistics-api.git`
 * change into the new directory
 * `npm install`
 * `bower install`
 * `sudo chmod +x build.sh`
 * `./build.sh`
 
-Copy the build files to your webserver or to CDN.
+Copy the build files to your webserver or CDN.
 
-## Running / Development
+## **Running / Development**
 
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+### **Code Generators**
 
 Make use of the many generators for code, try `ember help generate` for more details
 
-### Running Tests
+### **Running Tests**
 
 * `ember test`
 * `ember test --server`
 
-### Building
+### **Building**
 
 * `ember build` (development)
 * `ember build --environment production` (production)
 
 
 
-### Configuration Documentation- Applies to all brnanches
+### **Configuration Documentation**
 
 Configuration is actually simple, just read it twice and think twice before changing defaults.
 
 ```javascript
-/* jshint node: true */
-
 module.exports = function (environment) {
     var ENV = {
         modulePrefix: 'open-ethereum-pool',
@@ -94,51 +79,50 @@ module.exports = function (environment) {
 
         APP: {
             // API host and port
-            ApiUrl: '//eth.daggerpool.com/',
+            ApiUrl: '//equalhash.pt/',
 
-            // HTTP mining endpoint            
-            HttpHost: 'http://eth-us01.daggerpool.com',
-            HttpPort: 40001,
+            // HTTP mining endpoint
+            HttpHost: 'equalhash.pt',
+            HttpPort: 40002,
 
             // Stratum mining endpoint
-            StratumHost: 'eth-us01.daggerpool.com',
-            StratumPort: 40011,
+            StratumHost: 'equalhash.pt',
+            StratumPort: 9009,
 
-            StratumHost1: 'eth-uk01.daggerpool.com',
-            StratumPort1: 40011,
+            // Stratum SSL mining endpoint
+            StratumHost1: 'equalhash.pt',
+            StratumPort1: 8008,
 
-            NicehashHost: 'eth-nh.daggerpool.com',
-            NicehashPost: 40021,
+            NicehashHost: '',
+            NicehashPost: 40004,
 
             // Fee and payout details
-            PoolFee: '0.99%',
-            PayoutThreshold: '0.01',
+            PoolFee: '0.5%',
+            PayoutThreshold: '0.5',
             ShareDifficulty: '4000000000',
 
             //Current and Localization
             Currency: 'USD',
-            CoinName: 'Ethereum',
-            CoinShortName: 'ETH',
-            PaymentText: 'every 2 hours',
-            SupportMail: 'helpdesk@daggerpool.com',
-            SupportHelpdesk: 'http://helpdesk.daggerpool.com',
-            WebsiteName: 'eth.daggerpool.com',
+            CoinName: 'Ethereum Classic',
+            CoinShortName: 'ETC',
+            PaymentText: 'every hour',
+            SupportMail: '',
+            SupportHelpdesk: '',
+            WebsiteName: 'equalhash.pt',
 
             //Coin Bases Settings
-            ChainAddress : 'https://etherscan.io/address/',
-	    TransactionAddress : 'https://etherscan.io/tx/',
-            UncleAddress : 'https://etherscan.io/uncle/',
-            BlockAddress : 'https://etherscan.io/block/',
+            ChainAddress : 'https://etcblockexplorer.com/addr/',
+	        TransactionAddress : 'https://minergate.com/blockchain/etc/transaction/',
+            UncleAddress : 'https://minergate.com/blockchain/etc/block/',
+            BlockAddress : 'https://minergate.com/blockchain/etc/block/',
 
             //Twitter Parameter
-            TwitterURL: 'https://twitter.com/',
-            TwitterHash: 'daggerpool_com',
+            TwitterURL: '',
+            TwitterHash: '',
 
 
             // For network hashrate (change for your favourite fork)
-            BlockTime: 15
-
-
+            BlockTime: 14
         }
     };
 
@@ -146,7 +130,7 @@ module.exports = function (environment) {
         /* Override ApiUrl just for development, while you are customizing
          frontend markup and css theme on your workstation.
          */
-        ENV.APP.ApiUrl = 'https://eth.daggerpool.com/'
+        ENV.APP.ApiUrl = 'https://etc.daggerpool.com/'
         // ENV.APP.LOG_RESOLVER = true;
         // ENV.APP.LOG_ACTIVE_GENERATION = true;
         // ENV.APP.LOG_TRANSITIONS = true;
@@ -169,29 +153,11 @@ module.exports = function (environment) {
         ENV.baseURL = '/ember-cli-twitter-feed/';
     }
 
-    ENV.contentSecurityPolicy = {
-        'script-src': [
-            "'self'",
-            'https://syndication.twitter.com',
-			            'https://cdn.syndication.twimg.com',
-            "'sha256-XnNQECY9o-nIv2Qgcd1A39YarwxTm10rhdzegH_JBxY='"],
-        'style-src': [
-            "'self'",
-            'http://platform.twitter.com',
-            "'sha256-zCvYlDs6LsUp0EqrJFjIGUiM_AG2fGlkNrzJ2YiBTG0='"],
-        'img-src': [
-            "'self'",
-            'data:',
-            'https://pbs.twimg.com',
-            'https://syndication.twitter.com',
-            'http://platform.twitter.com']
-    };
+    ENV.contentSecurityPolicy = {};
     return ENV;
 };
-
-
 ```
-## Further Reading / Useful Links
+## **Further Reading / Useful Links**
 
 * [ember.js](http://emberjs.com/)
 * [ember-cli](http://www.ember-cli.com/)
