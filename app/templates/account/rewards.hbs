@@ -40,7 +40,7 @@
             <tbody>
                 {{#each model.rewards as |tx|}}
                 <tr>
-                    <td>{{format-number  tx.blockheight}}</td>
+                    <td>{{tx.blockheight}}</td>
                     <td>
                         {{#if tx.immature}}
                         <span class="label label-default">{{format-balance tx.reward}}</span>
