@@ -1,7 +1,7 @@
 <!-- Fixed navbar -->
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     
-<a class="navbar-brand"> 
+<a class="navbar-brand" href="http://equalhash.pt"> 
         <!-- <object type="image/svg+xml" data="assets/etc.svg" style="height: 30px; width: 30px;">           
         </object> &nbsp;&nbsp; -->
       <img src="assets/etc_name.png" style="width:185px; margin-top:-7.5px"/>
@@ -23,7 +23,12 @@
           {{#link-to 'index'}}
             <i class="fa fa-home"></i> Home
           {{/link-to}}
-        {{/active-li}}     
+        {{/active-li}}
+        {{#active-li currentWhen='miners'}}
+          {{#link-to 'miners'}}
+            <i class="fa fa-users"></i> Miners
+          {{/link-to}}
+        {{/active-li}}
         {{#active-li currentWhen='blocks'}}
           {{#link-to 'blocks'}}
             <i class="fa fa-cubes"></i> Blocks Found
@@ -37,11 +42,6 @@
             <i class="fa fa-credit-card"></i> Payments
           {{/link-to}}
         {{/active-li}}
-        {{#active-li currentWhen='miners'}}
-          {{#link-to 'miners'}}
-            <i class="fa fa-users"></i> Miners
-          {{/link-to}}
-        {{/active-li}}
         <li>
           <a href="https://t.me/EqualHash_Bot">
             <i class="fa fa-mobile fa-lg"></i> Telegram Bot
@@ -53,12 +53,7 @@
           {{/link-to}}
         {{/active-li}}
       </ul>
-        
     </div>
-      
   </div>
-
-
 </div>
-
 {{outlet}}

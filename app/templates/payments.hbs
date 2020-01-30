@@ -5,24 +5,43 @@
         </div>
         <div class="col-lg-7" style="margin-bottom: 20px;" >
             <span  style="margin-top:50px; border-bottom: none;">
-                <strong>Pool pays using the Highly Profitable Dynamic PPLNS Reward system    </strong>                                   
+                <strong>Pool pays using the highly profitable Dynamic PPLNS Reward system</strong>                                   
             </span>
             <br/>
             <span  style="margin-top:50px; border-bottom: none;">
-                <strong>Current Fool Fee is </strong> <span class="label label-success">{{config.PoolFee}}</span> only                    
+                <strong>Current Pool Fee is only </strong> <span class="label label-success">{{config.PoolFee}}</span>                   
             </span>
             <br/>
             <span  style="margin-top:50px; border-bottom: none;">
-                <strong>Payouts are currently credited to miners account</strong> <span class="label label-success">{{config.PaymentText}}</span>
+                <strong>Payouts are processed </strong> <span class="label label-success">{{config.PaymentText}}</span> for all miners above the 0.5 ETC threshold
             </span>
             <br/>
             <span  style="margin-top:50px; border-bottom: none;">
-                <strong>Total Payment Send :</strong> <span class="label label-success">{{model.paymentsTotal}}</span> 
+                <strong>Total payments sent </strong> <span class="label label-success">{{model.paymentsTotal}}</span> 
             </span>
         </div>
         <!-- /.col-lg-12 -->
-    </div>  
-        
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12"> 
+            <!-- small box -->
+            <div class="small-box bg-green">
+                <div class="inner ">
+                    <h3><span class="text-white">
+                           {{model.paymentsTotal}}
+                        </span> </h3>
+                    <p>  payments  </p>
+                </div>
+                <div class="icon"> <i class="fa fa-credit-card"></i> </div>
+                <div class="panel-footer text-middle">
+                    <span class="text-green">Total payments sent</span>                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <div class="row" style="max-height: 600px; overflow-y: scroll;">
         <div class="col-lg-12">
             <div class="panel panel-warning">
