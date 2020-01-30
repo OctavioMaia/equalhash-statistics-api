@@ -11,7 +11,12 @@
     <tbody>
     {{#each-in model.luck as |total row|}}
     <tr>
-      <td>Last {{total}} blocks</td>
+      {{#unless row}}
+        <td>Last {{total}} blocks</td>
+      {{/unless}}
+      {{#if (eq row (sub model.luck.length 1))}}
+        <td>All blocks</td>
+      {{/if}}
       <td>{{format-number row.luck style='percent'}}</td>
       <td>{{format-number row.uncleRate style='percent'}}</td>
       {{!-- <td>{{format-number row.orphanRate style='percent'}}</td> --}}
