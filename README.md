@@ -27,6 +27,10 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](http://www.ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
+### **Building the mining pool**
+
+Check the [equalhash-mining-pool](https://github.com/OctavioMaia/equalhash-mining-pool) for the mining pool tutorial.
+
 ## **Installation**
 
 * `git clone -b <branch> https://github.com/OctavioMaia/equalhash-statistics-api.git`
